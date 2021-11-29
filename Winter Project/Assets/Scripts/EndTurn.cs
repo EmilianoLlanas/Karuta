@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EndTurn : MonoBehaviour
 {
-    public GameObject Card1,Card2,Mini1,PlayerZone;
+    public GameObject Card1,Card2,PlayerZone;
     public int cardsInHand;
 
     List<GameObject> cards = new List<GameObject>();
@@ -16,7 +16,6 @@ public class EndTurn : MonoBehaviour
 
         cards.Add(Card1);
         cards.Add(Card2);
-        mini.Add(Mini1);
 
         for (int i = 0; i < 4; i++)
         {

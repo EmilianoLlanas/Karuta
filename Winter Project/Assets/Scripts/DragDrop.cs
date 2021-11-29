@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class DragDrop : MonoBehaviour
 {
-    public CardTray cardtray;
     private bool isDragging = false;
     private bool isOverDropZone;
     private GameObject dropZone;
@@ -54,7 +53,6 @@ public class DragDrop : MonoBehaviour
             // transform.SetParent(cardOrderTray.transform, false);
 
             Destroy(this.gameObject);
-            cardtray.addMini(1);
         }
         else
         {
