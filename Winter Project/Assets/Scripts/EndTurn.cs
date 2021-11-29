@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EndTurn : MonoBehaviour
 {
-    public GameObject Card1,Card2,Mini1,PlayerZone,EnemyZone;
-    public int cardsInHand,enemyCardsInHand;
+    public GameObject Card1,Card2,Mini1,PlayerZone;
+    public int cardsInHand;
 
     List<GameObject> cards = new List<GameObject>();
     List<GameObject> mini = new List<GameObject>();
@@ -25,14 +25,6 @@ public class EndTurn : MonoBehaviour
             
         }
         cardsInHand = 4;
-
-        for (int i = 0; i < 4; i++)
-        {
-            GameObject EnemyCard = Instantiate(mini[Random.Range(0,mini.Count)], new Vector3(0, 0, 0), Quaternion.identity);
-            EnemyCard.transform.SetParent(EnemyZone.transform, false);
-            
-        }
-        enemyCardsInHand = 4;
     }
 
     // Update is called once per frame
@@ -48,13 +40,6 @@ public class EndTurn : MonoBehaviour
             GameObject playerCard = Instantiate(cards[Random.Range(0, cards.Count)], new Vector3(0, 0, 0), Quaternion.identity);
             playerCard.transform.SetParent(PlayerZone.transform, false);
             cardsInHand += 1;
-        }
-
-        if (enemyCardsInHand < 6)
-        {
-            GameObject EnemyCard = Instantiate(mini[Random.Range(0, mini.Count)], new Vector3(0, 0, 0), Quaternion.identity);
-            EnemyCard.transform.SetParent(EnemyZone.transform, false);
-            enemyCardsInHand += 1;
         }
 
 

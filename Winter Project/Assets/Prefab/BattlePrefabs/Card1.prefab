@@ -62,13 +62,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.07058824, g: 0.43529412, b: 0.50980395, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 5a1a867ea29ee9d43890eb9a8adca636, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -92,8 +93,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardtray: {fileID: 4909258947885870444, guid: 2c5dcdb16dd58b04bada5dd238e9a89b,
     type: 3}
-  cardOrderTray: {fileID: 5028998349029534435, guid: 2c5dcdb16dd58b04bada5dd238e9a89b,
-    type: 3}
+  cardOrderTray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &3497917479208847436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,6 +115,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 5935586421456679468}
+          m_TargetAssemblyTypeName: 
           m_MethodName: startDrag
           m_Mode: 1
           m_Arguments:
@@ -127,6 +131,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 5935586421456679468}
+          m_TargetAssemblyTypeName: 
           m_MethodName: endDrag
           m_Mode: 1
           m_Arguments:
