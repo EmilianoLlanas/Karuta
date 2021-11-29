@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7895027017678105896}
   m_Layer: 8
   m_Name: Card1
-  m_TagString: Untagged
+  m_TagString: Card1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,8 +91,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e6e430b7ed245c46a7c7acd1e57b106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardtray: {fileID: 4909258947885870444, guid: 2c5dcdb16dd58b04bada5dd238e9a89b,
-    type: 3}
   cardOrderTray:
   - {fileID: 0}
   - {fileID: 0}

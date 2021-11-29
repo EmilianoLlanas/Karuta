@@ -51,7 +51,7 @@ public class DragDrop : MonoBehaviour
         if(isOverDropZone)
         {
             // transform.SetParent(cardOrderTray.transform, false);
-
+            Debug.Log(gameObject.tag);
             Destroy(this.gameObject);
         }
         else
