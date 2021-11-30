@@ -11,10 +11,15 @@ public class DragDrop : MonoBehaviour
     private GameObject dropZone;
     public GameObject[] cardOrderTray;
     private Vector2 startPosition;
+    public GameObject EndTurnObject;
+    public GameObject gameControllerObject;
+
     // Start is called before the first frame update
     void Start()
     {
-       //cardOrderTray = GameObject.FindGameObjectsWithTag("CardOrderTray");
+        EndTurnObject = GameObject.Find("EndTurn-Button");
+        EndTurn turnScript = EndTurnObject.GetComponent<EndTurn>();
+        //cardOrderTray = GameObject.FindGameObjectsWithTag("CardOrderTray");
     }
 
     // Update is called once per frame
@@ -51,8 +56,17 @@ public class DragDrop : MonoBehaviour
         if(isOverDropZone)
         {
             // transform.SetParent(cardOrderTray.transform, false);
-            Debug.Log(gameObject.tag);
+            //Debug.Log(gameObject.tag);
             Destroy(this.gameObject);
+
+            EndTurnObject = GameObject.Find("EndTurn-Button");
+            EndTurn turnScript = EndTurnObject.GetComponent<EndTurn>();
+
+            gameControllerObject = GameObject.Find("Prota-Battle");
+            GameController gameControlScript = gameControllerObject.GetComponent<GameController>();
+
+            turnScript.cardsInHand--;
+            gameControlScript.playCard(gameObject.tag);
         }
         else
         {

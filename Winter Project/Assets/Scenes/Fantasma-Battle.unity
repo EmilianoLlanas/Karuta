@@ -1285,7 +1285,7 @@ PrefabInstance:
     - target: {fileID: 8827318132564629151, guid: 6edb95dc315e3f84ca6f5e90390093a6,
         type: 3}
       propertyPath: m_Name
-      value: Button
+      value: EndTurn-Button
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6edb95dc315e3f84ca6f5e90390093a6, type: 3}
