@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu/UIMainMenu.unity
+    guid: e7fd43ce534a7164889899ae23f7f3b1
+  - enabled: 1
+    path: Assets/Scenes/Fantasma-Battle.unity
+    guid: e133ea437b860b044b5f888838f41e2a
   m_configObjects: {}
