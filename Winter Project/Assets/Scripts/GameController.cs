@@ -39,7 +39,7 @@ public class GameController : MonoBehaviour
     {
         Notifications.text = "Enemy Damage: "+EnemyDamage.ToString();
         PlayerHealth -= EnemyDamage;
-        EnemyDamage += 500;
+        EnemyDamage += 250;
     }
 
 
@@ -79,11 +79,10 @@ public class GameController : MonoBehaviour
             case "Card7":
                 
                 turnScript.drawCard();
-                turnScript.drawCard();
+                
                 break;
 
             case "Card8":
-                turnScript.drawCard();
                 turnScript.drawCard();
                 turnScript.drawCard();
                 break;
