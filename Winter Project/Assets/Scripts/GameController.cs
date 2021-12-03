@@ -7,7 +7,7 @@ using TMPro;
 public class GameController : MonoBehaviour
 {
     public int PlayerHealth=8000;
-    public int EnemyHealth=16000;
+    public int EnemyHealth;
     public int EnemyDamage = 500;
 
     public Text PlayerHealthText;
@@ -39,7 +39,7 @@ public class GameController : MonoBehaviour
     {
         Notifications.text = "Enemy Damage: "+EnemyDamage.ToString();
         PlayerHealth -= EnemyDamage;
-        EnemyDamage += 250;
+        EnemyDamage += 200;
     }
 
 

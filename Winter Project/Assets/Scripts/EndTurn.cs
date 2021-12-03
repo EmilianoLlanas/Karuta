@@ -27,13 +27,13 @@ public class EndTurn : MonoBehaviour
         cards.Add(Card9);
         cards.Add(Card10);
 
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 4; i++)
         {
             GameObject playerCard = Instantiate(cards[Random.Range(0,cards.Count)], new Vector3(0, 0, 0), Quaternion.identity);
             playerCard.transform.SetParent(PlayerZone.transform, false);
             
         }
-        cardsInHand = 3;
+        cardsInHand = 4;
     }
 
     // Update is called once per frame
