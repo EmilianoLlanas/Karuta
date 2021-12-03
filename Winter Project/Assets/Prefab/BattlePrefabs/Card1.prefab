@@ -95,6 +95,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  EndTurnObject: {fileID: 0}
+  gameControllerObject: {fileID: 0}
 --- !u!114 &3497917479208847436
 MonoBehaviour:
   m_ObjectHideFlags: 0
